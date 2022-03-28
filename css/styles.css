@@ -1,0 +1,127 @@
+@import url('https://fonts.googleapis.com/css2?family=Alegreya:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,500;1,600;1,700;1,800;1,900&family=Source+Code+Pro:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Work+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+html,body {
+    margin: 0 auto;
+    overflow: hidden !important;
+}
+h1 {
+    color: rgba(0, 255, 25, 1);
+    font-family: 'Source Code Pro', monospace;
+}
+h2 {
+    color: rgba(0, 255, 25, 1);
+    font-family: 'Source Code Pro', monospace;
+}
+.intro {
+    width: 100vw;
+    height: 100vh;
+    background-color: black;
+}
+.container-fluid {
+    justify-content: center !important;
+    height: 60px;
+}
+.navbar-toggler-icon {
+    background-image: unset !important;
+}
+.navbar-dark .navbar-toggler {
+    border-color: rgb(0, 255, 25);
+    border-radius: 1px;
+    -webkit-box-shadow: 0px 0px 93px -1px rgba(0, 255, 25, 1);
+    -moz-box-shadow: 0px 0px 93px -1px rgba(0, 255, 25, 1);
+    box-shadow: 0px 0px 93px -1px rgba(0, 255, 25, 1);
+}
+.bg-dark {
+    background-color: black  !important;
+}
+.navbar-toggler:focus {
+    border: 1px solid rgb(0, 255, 25) !important;
+    transition: all 1s ease 50ms !important;
+    box-shadow: unset !important;
+}
+.navbar-toggler:hover  .icon-to-toggle{
+    transform: rotate(180deg) !important;
+    transition: all 0.5s ease 50ms !important;
+}
+.navbar-toggler:hover  {
+    border: 1px solid rgb(0, 255, 25) !important;
+    transition: all 1s ease 50ms !important;
+    box-shadow: unset !important;
+}
+.wrap-text {
+    padding-top: 20vh;
+    max-width: 35vw;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+}
+/* WRITER */
+
+.writer .lukasz {
+    overflow: hidden; /* Ensures the content is not revealed until the animation */
+    border-right: .15em solid rgba(0, 255, 25, 1); /* The typwriter cursor */
+    white-space: nowrap; /* Keeps the content on a single line */
+    margin: 0 auto; /* Gives that scrolling effect as the typing happens */
+    letter-spacing: .10em; /* Adjust as needed */
+    width: 20vw;
+    margin-bottom: 3vh;
+    animation: 
+      typing 4s steps(40, end),
+      blink-caret .75s step-end infinite;
+  }
+  
+  /* The typing effect */
+  @keyframes typing {
+    from { width: 0 }
+    to { width: 100% }
+  }
+  
+  /* The typewriter cursor effect */
+  @keyframes blink-caret {
+    from, to { border-color: transparent }
+    50% { border-color: rgba(0, 255, 25, 1); }
+  }
+  .writer .frontend {
+    overflow: hidden; /* Ensures the content is not revealed until the animation */
+    border-right: .15em solid rgba(0, 255, 25, 1); /* The typwriter cursor */
+    white-space: nowrap; /* Keeps the content on a single line */
+    margin: 0 auto; /* Gives that scrolling effect as the typing happens */
+    letter-spacing: .10em; /* Adjust as needed */
+    width: 35vw;
+    animation: 
+      typing 4s steps(40, end),
+      blink-caret .75s step-end infinite;
+  }
+  
+  /* The typing effect */
+  @keyframes typing {
+    from { width: 0 }
+    to { width: 100% }
+  }
+  
+  /* The typewriter cursor effect */
+  @keyframes blink-caret {
+    from, to { border-color: transparent }
+    50% { border-color: rgba(0, 255, 25, 1); }
+  }
+
+  .circle {
+      width: 200px;
+      height: 200px;
+      border-radius: 360px;
+      margin-left: auto;
+      margin-right: auto;
+      margin-top: 15vh;
+      border: 1px solid rgba(0, 255, 25, 1);
+      background-image: url(/img/me.jpg);
+      background-position: center;
+      background-size: cover;
+  }
+  .circle:hover {
+    -webkit-box-shadow: 0px 0px 93px -1px rgba(0, 255, 25, 1);
+    -moz-box-shadow: 0px 0px 93px -1px rgba(0, 255, 25, 1);
+    box-shadow: 0px 0px 93px -1px rgba(0, 255, 25, 1);
+    transform: scale(1.2);
+    transition: all 0.5s ease 50ms !important;
+    cursor: pointer;
+  }
